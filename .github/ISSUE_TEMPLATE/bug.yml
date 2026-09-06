@@ -1,0 +1,9 @@
+name: Bug report
+description: Report reproducible behavior using synthetic data
+title: '[Bug]: '
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduce
+    attributes: {label: Reproduction, description: Remove secrets and personal data.}
+    validations: {required: true}

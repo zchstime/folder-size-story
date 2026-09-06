@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "folder-size-story"
+version = "0.1.0"
+description = "Explain where disk space went with ranked folders, file types, and large-file evidence."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "zchstime" }]
+keywords = ['disk-usage', 'storage', 'file-management', 'developer-tools', 'productivity', 'local-first']
+[project.scripts]
+size-story = "folder_size_story.__main__:main"
+[tool.setuptools.packages.find]
+where = ["src"]
